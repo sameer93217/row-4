@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Netflix Home Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+
+        .logo {
+            color: red;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 16px;
+        }
+
+        .banner {
+            height: 450px;
+            padding: 50px;
+            background:
+            linear-gradient(to right, black, transparent),
+            url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1400")
+            center/cover;
+        }
+
+        .banner h1 {
+            font-size: 50px;
+            margin-top: 100px;
+        }
+
+        .banner p {
+            font-size: 18px;
+            max-width: 500px;
+        }
+
+        button {
+            padding: 12px 25px;
+            border: none;
+            font-size: 17px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .play {
+            background-color: white;
+            color: black;
+        }
+
+        .info {
+            background-color: gray;
+            color: white;
+        }
+
+        .movies {
+            padding: 20px 40px;
+        }
+
+        .movie-list {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+        }
+
+        .movie-list img {
+            width: 180px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .movie-list img:hover {
+            transform: scale(1.08);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">NETFLIX</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">TV Shows</a>
+            <a href="#">Movies</a>
+            <a href="#">My List</a>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <h1>STRANGER THINGS</h1>
+
+        <p>
+            A group of young friends discovers
+            mysterious secrets in their town.
+            Adventure, mystery and excitement!
+        </p>
+
+        <button class="play">▶ Play</button>
+        <button class="info">More Info</button>
+    </div>
+
+    <section class="movies">
+        <h2>Popular on Netflix</h2>
+
+        <div class="movie-list">
+
+            <img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg">
+
+            <img src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg">
+
+            <img src="https://image.tmdb.org/t/p/w500/q719jXXEzOoYaps6babgKnONONX.jpg">
+
+            <img src="https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg">
+
+            <img src="https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg">
+
+        </div>
+    </section>
+
+    <section class="movies">
+        <h2>Trending Now</h2>
+
+        <div class="movie-list">
+            <img src="https://image.tmdb.org/t/p/w500/5weKu49pzJCt06OPpjvT80efnQj.jpg">
+
+            <img src="https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg">
+
+            <img src="https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg">
+
+            <img src="https://image.tmdb.org/t/p/w500/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg">
+        </div>
+    </section>
+
+</body>
+</html>
